@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constrainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.example.anlan.qrtracker.MyJavaCameraView
+                android:id="@+id/javaCameraView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:camera_id="back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:show_fps="true"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteX="510dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/mental"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Mental" />
+
+                <Spinner
+                    android:id="@+id/mental_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:entries="@array/nasa_tlx" />
+
+                <TextView
+                    android:id="@+id/successful"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Successful" />
+
+                <Spinner
+                    android:id="@+id/success_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:entries="@array/nasa_tlx" />
+
+                <TextView
+                    android:id="@+id/frustration"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Frustration" />
+
+                <Spinner
+                    android:id="@+id/frustration_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:entries="@array/nasa_tlx" />
+
+                <TextView
+                    android:id="@+id/use"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Use" />
+
+                <Spinner
+                    android:id="@+id/use_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:entries="@array/yorn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp">
+
+                <Button
+                    android:id="@+id/track_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Start"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/track_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Stop"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/delay_detect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Delay D"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/delay_track"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Delay T"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/delay_render"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Delay R"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Info" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

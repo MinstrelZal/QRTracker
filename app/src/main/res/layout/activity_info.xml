@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Spinner
+        android:id="@+id/arexp_select"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/tech_level_select"
+        android:layout_alignTop="@+id/AR_exp"
+        android:entries="@array/yorn" />
+
+    <Spinner
+        android:id="@+id/age_select"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/arexp_select"
+        android:layout_alignTop="@+id/Age"
+        android:entries="@array/age" />
+
+    <Spinner
+        android:id="@+id/tech_level_select"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="204dp"
+        android:entries="@array/tech_level" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:entries="@array/gender" />
+
+    <TextView
+        android:id="@+id/AR_exp"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tech_level"
+        android:layout_marginBottom="176dp"
+        android:gravity="center"
+        android:text="AR Exp" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/AR_exp"
+        android:layout_marginBottom="246dp"
+        android:gravity="center"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/tech_level"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tech_level_select"
+        android:layout_marginStart="72dp"
+        android:gravity="center"
+        android:text="Tech Level" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:text="Done" />
+
+</RelativeLayout>
